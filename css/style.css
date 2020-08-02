@@ -370,7 +370,7 @@
   text-align: center;
 }
 
-.social-link-list {
+.our-team .social-link-list {
   display: flex;
   justify-content: space-between;
   margin-right: 32px;
@@ -500,34 +500,25 @@
   text-transform: uppercase;
 }
 
-.footer .social-link {
-  display: inline-block;
+.footer .social-link-list {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.footer .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background-color: var(--footer-social-links-background-color);
-  color: var(--white-color);
 }
 
-/* задать svg белый цыет в fill */
-
-.footer .link-instagram {
-  background-image: url(../images/our-team/social/instagram.svg);
-}
-
-.footer .link-twitter {
-  background-image: url(../images/our-team/social/twitter.svg);
-}
-
-.footer .link-facebook {
-  background-image: url(../images/our-team/social/facebook.svg);
-}
-
-.footer .link-linkedin {
-  background-image: url(../images/our-team/social/linkedin.svg);
+.footer .social-link-icon {
+  --color4: var(--white-color);
 }
 
 .footer .social-link:hover,
@@ -537,6 +528,8 @@
 
 .footer .subscribe-button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   padding: 10px 29px;
   background: var(--primary-accent-color);
@@ -553,15 +546,8 @@
   cursor: pointer;
 }
 
-.subscribe-button::after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.footer .telegram {
   margin-left: 10px;
-  background-image: url(../images/our-team/social/telegram.svg);
-  background-size: contain;
-  align-items: center;
 }
 
 .subscribe-button:hover,
