@@ -42,7 +42,7 @@
   --footer-background-color: #2f303a;
   --portfolio-list-hidden-color: rgba(33, 150, 243, 0.9);
   --portfolio-list-border-color: #eeeeee;
-  --our-team-social-links-basic-color: #afb1b8;
+  --links-icon-basic-color: #afb1b8;
 }
 
 /* Стили для index.html */
@@ -389,7 +389,7 @@
 .social-link-icon {
   width: 20px;
   height: 20px;
-  --color4: var(--our-team-social-links-basic-color);
+  --color4: var(--links-icon-basic-color);
 }
 
 .social-link:hover,
@@ -409,18 +409,32 @@
   align-items: center;
 }
 
-.section .clients-link {
-  display: block;
+.clients-list-link {
+  display: flex;
   width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--links-icon-basic-color);
+  border-radius: 4px;
 }
 
-.clients-list .item:not(:last-child) {
+.clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section .clients-link:hover,
-.section .clients-link:focus {
-  background-color: var(--primary-accent-color);
+.clients-link-icon {
+  --color4: var(--links-icon-basic-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--primary-accent-color);
+}
+
+.clients-list-link:hover .clients-link-icon,
+.clients-list-link:focus .clients-link-icon {
+  --color4: var(--primary-accent-color);
 }
 
 /* Footer */
