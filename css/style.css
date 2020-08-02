@@ -24,7 +24,8 @@
 
 /* outline: 2px solid tomato - поставить в каждый (блок), для удобства верстки */
 
-/* в каждую ссылку, кнопку добавить атрибут arial-label */
+/* в каждую ссылку, кнопку добавить атрибут arial-label 
+оптимизировать все изображения*/
 
 :root {
   --primary-text-color: #757575;
@@ -147,7 +148,8 @@
 }
 
 .authorization-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -155,6 +157,17 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.auth-nav-link-icon {
+  margin-right: 10px;
+
+  --color3: var(--primary-text-color);
+}
+
+.authorization-nav .link:hover .auth-nav-link-icon,
+.authorization-nav .link:focus .auth-nav-link-icon {
+  --color3: var(--primary-accent-color);
 }
 
 /* Hero section */
