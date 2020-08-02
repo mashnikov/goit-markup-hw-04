@@ -257,32 +257,19 @@
   margin-right: 0;
 }
 
-.features-list-item::before {
-  content: "";
-  display: block;
+.fetures-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.features-list-item.icon-antenna::before {
-  background-image: url(../images/features/antenna.svg);
-}
-
-.features-list-item.icon-clock::before {
-  background-image: url(../images/features/clock.svg);
-}
-
-.features-list-item.icon-diagram::before {
-  background-image: url(../images/features/diagram.svg);
-}
-
-.features-list-item.icon-astronaut::before {
-  background-image: url(../images/features/astronaut.svg);
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list .title {
