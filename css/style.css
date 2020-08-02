@@ -12,6 +12,7 @@
 /* цвет фона подписей в разделе Чем мы занимаемся rgba(47, 48, 58, 0.8) */
 /* цвет фона в футере #2F303A */
 /* цвет рамки списка портфолио #EEEEEE */
+/* цвет иконок соцсетей в каточках our team #AFB1B8 */
 
 /* шрифты
 лого font-family: Raleway; font-weight: bold
@@ -41,6 +42,7 @@
   --footer-background-color: #2f303a;
   --portfolio-list-hidden-color: rgba(33, 150, 243, 0.9);
   --portfolio-list-border-color: #eeeeee;
+  --our-team-social-links-basic-color: #afb1b8;
 }
 
 /* Стили для index.html */
@@ -370,16 +372,34 @@
 
 .social-link-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .social-link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+  --color4: var(--our-team-social-links-basic-color);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--primary-accent-color);
+}
+
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+  --color4: var(--white-color);
 }
 
 /* Clients section */
