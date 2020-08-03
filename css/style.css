@@ -163,13 +163,12 @@
 
 .auth-nav-link-icon {
   margin-right: 10px;
-
-  --color3: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
 .authorization-nav .link:hover .auth-nav-link-icon,
 .authorization-nav .link:focus .auth-nav-link-icon {
-  --color3: var(--primary-accent-color);
+  fill: var(--primary-accent-color);
 }
 
 /* Hero section */
@@ -389,7 +388,8 @@
 .social-link-icon {
   width: 20px;
   height: 20px;
-  --color4: var(--links-icon-basic-color);
+
+  fill: var(--links-icon-basic-color);
 }
 
 .social-link:hover,
@@ -399,7 +399,7 @@
 
 .social-link:hover .social-link-icon,
 .social-link:focus .social-link-icon {
-  --color4: var(--white-color);
+  fill: var(--white-color);
 }
 
 /* Clients section */
@@ -424,7 +424,7 @@
 }
 
 .clients-link-icon {
-  --color4: var(--links-icon-basic-color);
+  fill: var(--links-icon-basic-color);
 }
 
 .clients-list-link:hover,
@@ -434,7 +434,7 @@
 
 .clients-list-link:hover .clients-link-icon,
 .clients-list-link:focus .clients-link-icon {
-  --color4: var(--primary-accent-color);
+  fill: var(--primary-accent-color);
 }
 
 /* Footer */
@@ -518,7 +518,7 @@
 }
 
 .footer .social-link-icon {
-  --color4: var(--white-color);
+  fill: var(--white-color);
 }
 
 .footer .social-link:hover,
